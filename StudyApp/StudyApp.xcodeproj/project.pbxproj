@@ -12,9 +12,7 @@
 		B8B739682CC2BBF600D6E2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B739672CC2BBF600D6E2DA /* Assets.xcassets */; };
 		B8B7396B2CC2BBF600D6E2DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B7396A2CC2BBF600D6E2DA /* Preview Assets.xcassets */; };
 		B8B7396D2CC2BBF600D6E2DA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B7396C2CC2BBF600D6E2DA /* Persistence.swift */; };
-		B8B739702CC2BBF600D6E2DA /* FlashCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8B7396E2CC2BBF600D6E2DA /* FlashCard.xcdatamodeld */; };
 		B8B739932CC36A2B00D6E2DA /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B739922CC36A2B00D6E2DA /* Flashcard.swift */; };
-		B8B739952CC36A9E00D6E2DA /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B739942CC36A9E00D6E2DA /* CoreDataStack.swift */; };
 		B8B739972CC36BE300D6E2DA /* AddFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B739962CC36BE300D6E2DA /* AddFlashcardView.swift */; };
 		B8B739992CC376E200D6E2DA /* FlippableFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B739982CC376E200D6E2DA /* FlippableFlashcardView.swift */; };
 		B8B7399D2CC37A1600D6E2DA /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B7399C2CC37A1600D6E2DA /* QuizView.swift */; };
@@ -90,9 +88,7 @@
 		B8B739672CC2BBF600D6E2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8B7396A2CC2BBF600D6E2DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B8B7396C2CC2BBF600D6E2DA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		B8B7396F2CC2BBF600D6E2DA /* FlashCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlashCard.xcdatamodel; sourceTree = "<group>"; };
 		B8B739922CC36A2B00D6E2DA /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
-		B8B739942CC36A9E00D6E2DA /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		B8B739962CC36BE300D6E2DA /* AddFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlashcardView.swift; sourceTree = "<group>"; };
 		B8B739982CC376E200D6E2DA /* FlippableFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippableFlashcardView.swift; sourceTree = "<group>"; };
 		B8B7399C2CC37A1600D6E2DA /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
@@ -314,8 +310,6 @@
 				B8B7396C2CC2BBF600D6E2DA /* Persistence.swift */,
 				B8B739922CC36A2B00D6E2DA /* Flashcard.swift */,
 				C24B62C62CFD1B86006992BD /* FlashcardViewModel.swift */,
-				B8B739942CC36A9E00D6E2DA /* CoreDataStack.swift */,
-				B8B7396E2CC2BBF600D6E2DA /* FlashCard.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -457,12 +451,10 @@
 				B8B739662CC2BBF000D6E2DA /* FlashcardsView.swift in Sources */,
 				C2197C7A2CF9108C002E6C49 /* MadeForView.swift in Sources */,
 				C2197C6E2CF9108C002E6C49 /* Data.swift in Sources */,
-				B8B739952CC36A9E00D6E2DA /* CoreDataStack.swift in Sources */,
 				C20A3B352CFBA9BE00E91FE9 /* Home.swift in Sources */,
 				C2197C732CF9108C002E6C49 /* MusicModel.swift in Sources */,
 				C20A3B382CFBB41B00E91FE9 /* Helpers.swift in Sources */,
 				B8B739A92CC3EE4E00D6E2DA /* SearchBar.swift in Sources */,
-				B8B739702CC2BBF600D6E2DA /* FlashCard.xcdatamodeld in Sources */,
 				C2197C7D2CF9108C002E6C49 /* NeuShadow.swift in Sources */,
 				B8B739642CC2BBF000D6E2DA /* StudyApp.swift in Sources */,
 				C24B62C72CFD1B86006992BD /* FlashcardViewModel.swift in Sources */,
@@ -596,7 +588,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = StudyApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = StudyApp/StudyApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StudyApp/Preview Content\"";
@@ -628,7 +620,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = StudyApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = StudyApp/StudyApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StudyApp/Preview Content\"";
@@ -824,19 +816,6 @@
 			productName = Appwrite;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		B8B7396E2CC2BBF600D6E2DA /* FlashCard.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B8B7396F2CC2BBF600D6E2DA /* FlashCard.xcdatamodel */,
-			);
-			currentVersion = B8B7396F2CC2BBF600D6E2DA /* FlashCard.xcdatamodel */;
-			path = FlashCard.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B8B739582CC2BBEF00D6E2DA /* Project object */;
 }
