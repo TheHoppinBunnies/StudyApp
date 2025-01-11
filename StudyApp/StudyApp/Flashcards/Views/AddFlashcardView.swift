@@ -17,7 +17,7 @@ struct FlashcardDetailView: View {
     @State private var exampleSentence = ""
     
 //    var flashcard: FlashcardEntity? // Make sure this is optional
-
+    var flashcard: Flashcard
 
     var body: some View {
         NavigationView {
@@ -108,13 +108,13 @@ struct FlashcardDetailView: View {
     }
 }
 
-
-// Preview
-struct FlashcardDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        FlashcardDetailView() // For adding a new flashcard
-    }
-}
+//
+//// Preview
+//struct FlashcardDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FlashcardDetailView() // For adding a new flashcard
+//    }
+//}
 
 
 

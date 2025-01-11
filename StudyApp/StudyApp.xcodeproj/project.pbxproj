@@ -11,7 +11,6 @@
 		B8B739662CC2BBF000D6E2DA /* FlashcardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B739652CC2BBF000D6E2DA /* FlashcardsView.swift */; };
 		B8B739682CC2BBF600D6E2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B739672CC2BBF600D6E2DA /* Assets.xcassets */; };
 		B8B7396B2CC2BBF600D6E2DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B7396A2CC2BBF600D6E2DA /* Preview Assets.xcassets */; };
-		B8B7396D2CC2BBF600D6E2DA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B7396C2CC2BBF600D6E2DA /* Persistence.swift */; };
 		B8B739932CC36A2B00D6E2DA /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B739922CC36A2B00D6E2DA /* Flashcard.swift */; };
 		B8B739972CC36BE300D6E2DA /* AddFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B739962CC36BE300D6E2DA /* AddFlashcardView.swift */; };
 		B8B739992CC376E200D6E2DA /* FlippableFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B739982CC376E200D6E2DA /* FlippableFlashcardView.swift */; };
@@ -39,8 +38,9 @@
 		C2197C7E2CF9108C002E6C49 /* FontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2197C6D2CF9108C002E6C49 /* FontModifier.swift */; };
 		C2197C862CF918DE002E6C49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2197C852CF918DE002E6C49 /* ContentView.swift */; };
 		C24B62C32CFD126D006992BD /* Flashcards.png in Resources */ = {isa = PBXBuildFile; fileRef = C24B62C22CFD126D006992BD /* Flashcards.png */; };
-		C24B62C52CFD19E9006992BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C24B62C42CFD19E9006992BD /* GoogleService-Info.plist */; };
 		C24B62C72CFD1B86006992BD /* FlashcardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B62C62CFD1B86006992BD /* FlashcardViewModel.swift */; };
+		C2882AA32D32C0C9009158B6 /* SetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2882AA22D32C0C9009158B6 /* SetDetailView.swift */; };
+		C29FE10E2D32B1AC0066CEFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C29FE10D2D32B1AC0066CEFC /* GoogleService-Info.plist */; };
 		C2D74B7D2CFA805E00E1AAC9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C2D74B7C2CFA805E00E1AAC9 /* FirebaseAnalytics */; };
 		C2D74B7F2CFA805E00E1AAC9 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = C2D74B7E2CFA805E00E1AAC9 /* FirebaseAnalyticsOnDeviceConversion */; };
 		C2D74B812CFA805E00E1AAC9 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = C2D74B802CFA805E00E1AAC9 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -87,7 +87,6 @@
 		B8B739652CC2BBF000D6E2DA /* FlashcardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsView.swift; sourceTree = "<group>"; };
 		B8B739672CC2BBF600D6E2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8B7396A2CC2BBF600D6E2DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B8B7396C2CC2BBF600D6E2DA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B8B739922CC36A2B00D6E2DA /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
 		B8B739962CC36BE300D6E2DA /* AddFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlashcardView.swift; sourceTree = "<group>"; };
 		B8B739982CC376E200D6E2DA /* FlippableFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippableFlashcardView.swift; sourceTree = "<group>"; };
@@ -119,8 +118,9 @@
 		C2197C6D2CF9108C002E6C49 /* FontModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontModifier.swift; sourceTree = "<group>"; };
 		C2197C852CF918DE002E6C49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C24B62C22CFD126D006992BD /* Flashcards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flashcards.png; sourceTree = "<group>"; };
-		C24B62C42CFD19E9006992BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C24B62C62CFD1B86006992BD /* FlashcardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewModel.swift; sourceTree = "<group>"; };
+		C2882AA22D32C0C9009158B6 /* SetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDetailView.swift; sourceTree = "<group>"; };
+		C29FE10D2D32B1AC0066CEFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +179,7 @@
 		B8B739622CC2BBF000D6E2DA /* StudyApp */ = {
 			isa = PBXGroup;
 			children = (
-				C24B62C42CFD19E9006992BD /* GoogleService-Info.plist */,
+				C29FE10D2D32B1AC0066CEFC /* GoogleService-Info.plist */,
 				C24B62C22CFD126D006992BD /* Flashcards.png */,
 				C20A3B362CFBAABD00E91FE9 /* StudyApp.entitlements */,
 				C2197C842CF918D0002E6C49 /* Main */,
@@ -294,6 +294,7 @@
 		C2197C822CF917BA002E6C49 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C2882AA22D32C0C9009158B6 /* SetDetailView.swift */,
 				B8B739652CC2BBF000D6E2DA /* FlashcardsView.swift */,
 				B8B739AC2CC5456900D6E2DA /* WelcomeFlashcardView.swift */,
 				B8B7399C2CC37A1600D6E2DA /* QuizView.swift */,
@@ -307,7 +308,6 @@
 			isa = PBXGroup;
 			children = (
 				B8B739A82CC3EE4E00D6E2DA /* SearchBar.swift */,
-				B8B7396C2CC2BBF600D6E2DA /* Persistence.swift */,
 				B8B739922CC36A2B00D6E2DA /* Flashcard.swift */,
 				C24B62C62CFD1B86006992BD /* FlashcardViewModel.swift */,
 			);
@@ -414,12 +414,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C24B62C52CFD19E9006992BD /* GoogleService-Info.plist in Resources */,
 				C2197C702CF9108C002E6C49 /* Lato-Black.ttf in Resources */,
 				B8B7396B2CC2BBF600D6E2DA /* Preview Assets.xcassets in Resources */,
 				C2197C712CF9108C002E6C49 /* Lato-Regular.ttf in Resources */,
 				C2197C6F2CF9108C002E6C49 /* Lato-Bold.ttf in Resources */,
 				C24B62C32CFD126D006992BD /* Flashcards.png in Resources */,
+				C29FE10E2D32B1AC0066CEFC /* GoogleService-Info.plist in Resources */,
 				B8B739682CC2BBF600D6E2DA /* Assets.xcassets in Resources */,
 				C2197C722CF9108C002E6C49 /* Lato-Semibold.ttf in Resources */,
 			);
@@ -440,9 +440,9 @@
 				C2197C752CF9108C002E6C49 /* PlayerView.swift in Sources */,
 				C2197C772CF9108C002E6C49 /* MusicView.swift in Sources */,
 				B8B7399D2CC37A1600D6E2DA /* QuizView.swift in Sources */,
-				B8B7396D2CC2BBF600D6E2DA /* Persistence.swift in Sources */,
 				C2197C742CF9108C002E6C49 /* PlayerViewModel.swift in Sources */,
 				C2197C7C2CF9108C002E6C49 /* ColorExtension.swift in Sources */,
+				C2882AA32D32C0C9009158B6 /* SetDetailView.swift in Sources */,
 				C2197C792CF9108C002E6C49 /* PlaylistView.swift in Sources */,
 				C2197C7E2CF9108C002E6C49 /* FontModifier.swift in Sources */,
 				C2197C7B2CF9108C002E6C49 /* ImageExtension.swift in Sources */,

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FlippableFlashcardView: View {
-	let flashcard: FlashcardEntity
+	let flashcard: Flashcard
 	@State private var isFlipped = false // State to track if the card is flipped
 
 	var body: some View {
@@ -21,7 +21,7 @@ struct FlippableFlashcardView: View {
 					// Front side of the card
 					if !isFlipped {
 						VStack {
-							Text(flashcard.word ?? "No Word")
+							Text(flashcard.word)
 								.font(.largeTitle)
 								.fontWeight(.bold)
 								.foregroundColor(.blue)
@@ -36,13 +36,13 @@ struct FlippableFlashcardView: View {
 					} else {
 						// Back side of the card
 						VStack {
-							Text(flashcard.translation ?? "No Translation")
+							Text(flashcard.translation)
 								.font(.title)
 								.fontWeight(.medium)
 								.foregroundColor(.blue) // Darker blue for translation
 								.padding(.bottom, 5)
 
-							Text(flashcard.exampleSentence ?? "No Example Sentence")
+							Text(flashcard.exampleSentence)
 								.font(.body)
 								.foregroundColor(.black) // Black for contrast
 								.multilineTextAlignment(.center)

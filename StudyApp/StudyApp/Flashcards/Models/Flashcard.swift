@@ -15,29 +15,26 @@ struct Flashcard: Identifiable {
     var word: String
     var translation: String
     var exampleSentence: String
+    var set: String
 
-    init(uid: String, word: String, translation: String, exampleSentence: String) {
+    init(uid: String, word: String, translation: String, exampleSentence: String, set: String) {
         self.id = UUID()
         self.uid = uid
         self.word = word
         self.translation = translation
         self.exampleSentence = exampleSentence
+        self.set = set
     }
 }
 
 struct FlashcardSet: Identifiable {
     var id: UUID = UUID()
     var title: String
-    var color: String
-    var numberOfFlashcards: Int
-    var flashcards: [Flashcard]
+//    var flashcards: [Flashcard]
 
-    init(id: UUID, title: String, color: String, numberOfFlashcards: Int, flashcards: [Flashcard]) {
-        self.id = id
+    init(title: String) {
+        self.id = UUID()
         self.title = title
-        self.color = color
-        self.numberOfFlashcards = numberOfFlashcards
-        self.flashcards = flashcards
+//        self.flashcards = flashcards
     }
 }
-

@@ -9,17 +9,28 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Welcome back")
-                .font(.largeTitle)
-                .fontWeight(.black)
+        VStack {
+            VStack(alignment: .leading) {
+                Text("Welcome back,")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
 
-            Text("Othmane")
-                .font(.title2)
-                .fontWeight(.bold)
+                Text("Othmane!")
+                    .font(.title2)
+                    .fontWeight(.bold)
+            }
+            .vSpacing(.top)
+            .hSpacing(.leading)
+            .padding()
+
+            NavigationLink {
+                FlashcardsView()
+            } label: {
+                Text("Flashcafds")
+            }
         }
-        .vSpacing(.top)
-        .hSpacing(.leading)
+        .environmentObject(FlashcardsViewModel())
+        .environmentObject(FlashcardSetViewModel())
     }
 }
 

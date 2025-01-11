@@ -6,24 +6,25 @@
 //
 
 import SwiftUI
-import Firebase
-
-class AppDelegate: NSObject, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        FirebaseApp.configure()
-        return true
-    }
-}
-
+import FirebaseCore
 @main
 struct StudyApp: App {
-    let persistenceController = PersistenceController.shared
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+//    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate\
+
+    init() {
+        FirebaseApp.configure()
+    }
 
     var body: some Scene {
         WindowGroup {
-            FlashcardsView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            Home()
+//                .onAppear {
+//                    let _ = FirebaseApp.shared
+//                }
+//                .onAppear {
+//                    flashcardsModel.fetchData()
+//                    setsModel.fetchData()
+//                }
         }
     }
 }
